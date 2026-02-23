@@ -70,6 +70,7 @@ Pensamento algorítmico e ordem lógica das verificações
 
 
 🚀 Como executar
+
 Certifique-se de ter o Python 3 instalado. No terminal, navegue até a pasta do projeto e execute:
 bashpython nome_do_arquivo.py
 Exemplo:
