@@ -125,6 +125,30 @@ Simula um pagamento via Pix com validações de segurança.
 
 ---
 
+### 6️⃣ `sistema_pagamento_internacional.py` — Pagamento Internacional
+
+Simula um pagamento internacional com conversão de moeda e aplicação de taxa.
+
+**Regras implementadas:**
+
+- Verifica se a conta está bloqueada  
+- Verifica se o cliente possui limite internacional  
+- Converte valor em dólar para real usando cotação  
+- Verifica se há saldo suficiente  
+- Aplica taxa de 1% para valores até 500 dólares  
+- Aplica taxa de 3% para valores acima de 500 dólares  
+- Atualiza saldo após aprovação  
+
+**Conceitos praticados:**
+
+- Conversão de moeda  
+- Cálculo percentual  
+- Operadores relacionais  
+- Condicionais encadeadas  
+- Organização de regras de negócio  
+
+---
+
 ## 📚 Conceitos aplicados
 
 - Variáveis e tipos de dados (`str`, `int`, `float`)  
@@ -145,4 +169,11 @@ Certifique-se de ter o **Python 3** instalado.
 
 No terminal, navegue até a pasta do projeto e execute:
 
+```bash
 python nome_do_arquivo.py
+```
+
+Exemplo:
+
+```bash
+python sistema_pagamento_internacional.py
