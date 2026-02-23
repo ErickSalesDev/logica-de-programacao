@@ -1,77 +1,129 @@
-🏦 Sistemas Bancários em Python
+# 🏦 Sistemas Bancários em Python
 
-Repositório de estudos de lógica de programação com foco em variáveis e condicionais, desenvolvido durante minha jornada como programador backend iniciante.
+Repositório de estudos de **lógica de programação** com foco em variáveis e condicionais, desenvolvido durante minha jornada como programador backend iniciante.
 
+---
 
-👨‍💻 Sobre este repositório
-Este repositório reúne projetos práticos criados para consolidar os fundamentos da programação em Python. Cada projeto simula um problema real do mundo bancário, aplicando os conceitos de variáveis, condicionais e pensamento algorítmico.
+## 👨‍💻 Sobre o repositório
+
+Este repositório reúne projetos práticos criados para consolidar os fundamentos da programação em Python.
+
+Cada projeto simula situações inspiradas no contexto bancário, aplicando:
+
+- Variáveis
+- Estruturas condicionais
+- Conversão de tipos
+- Validação de dados
+- Pensamento algorítmico
+
 Os projetos foram desenvolvidos de forma progressiva, aumentando a complexidade a cada etapa.
 
-🛠️ Tecnologias utilizadas
+---
 
-Python 3
+## 🛠️ Tecnologias utilizadas
 
+- Python 3
 
-📁 Projetos
-1. sistema_saque.py — Sistema de Saque
+---
+
+## 📁 Projetos
+
+### 1️⃣ `sistema_saque.py` — Sistema de Saque
+
 Simula o processo de saque em um caixa eletrônico.
-Regras implementadas:
 
-Verifica se a conta está bloqueada antes de prosseguir
-Verifica se o saldo é suficiente para o saque
-Exibe o novo saldo após o saque aprovado
+**Regras implementadas:**
 
-Conceitos praticados: condicionais aninhadas, operações com float, ordem lógica das verificações
+- Verifica se a conta está bloqueada
+- Verifica se o saldo é suficiente
+- Atualiza e exibe o novo saldo após saque aprovado
 
-2. sistema_de_score.py — Aprovação de Empréstimo
-Simula a análise de crédito para concessão de empréstimo bancário.
-Regras implementadas:
+**Conceitos praticados:**
 
-Nega o empréstimo se o score for abaixo de 300
-Aplica juros de 2% para score acima de 700
-Aplica juros de 5% para score entre 300 e 700
-Nega o empréstimo se o salário for insuficiente para cobrir a parcela mensal
+- Condicionais aninhadas  
+- Operações com `float`  
+- Ordem lógica das verificações  
 
-Conceitos praticados: cálculo de juros, divisão em parcelas, múltiplas condicionais
+---
 
-3. transferencia_bancaria.py — Transferência Bancária
+### 2️⃣ `sistema_de_score.py` — Aprovação de Empréstimo
+
+Simula a análise de crédito para concessão de empréstimo.
+
+**Regras implementadas:**
+
+- Score abaixo de 300 → empréstimo negado  
+- Score acima de 700 → juros de 2%  
+- Score entre 300 e 700 → juros de 5%  
+- Empréstimo negado se salário não cobrir a parcela mensal  
+
+**Conceitos praticados:**
+
+- Cálculo de juros  
+- Divisão em parcelas  
+- Múltiplas condicionais  
+- Comparação entre valores  
+
+---
+
+### 3️⃣ `transferencia_bancaria.py` — Transferência Bancária
+
 Simula o processamento de uma transferência entre contas.
-Regras implementadas:
 
-Verifica se a conta está bloqueada
-Verifica se o saldo é suficiente
-Exige senha especial para transferências acima de R$ 5.000,00
-Exibe o novo saldo após a transferência aprovada
+**Regras implementadas:**
 
-Conceitos praticados: condicionais aninhadas em vários níveis, comparação de strings, controle de fluxo
+- Verifica se a conta está bloqueada  
+- Verifica se há saldo suficiente  
+- Exige senha para transferências acima de R$ 5.000,00  
+- Atualiza saldo após aprovação  
 
-4. sistema-conta-bancaria.py — Abertura de Conta
-Simula a avaliação de abertura de conta para novos clientes.
-Regras implementadas:
+**Conceitos praticados:**
 
-Verifica a idade do cliente (menores precisam de responsável)
-Valida o CPF (mínimo de 11 dígitos)
-Define o tipo de conta com base na renda mensal (corrente ou poupança)
-Aprova conta juvenil para menores acompanhados de responsável
+- Condicionais aninhadas em múltiplos níveis  
+- Comparação de strings  
+- Controle de fluxo  
 
-Conceitos praticados: len() para validação de strings, condicionais com int() e str(), fluxos diferentes para perfis diferentes
+---
 
-📚 Conceitos aplicados
+### 4️⃣ `sistema-conta-bancaria.py` — Abertura de Conta
 
-Variáveis e tipos de dados (str, int, float)
-Entrada de dados com input()
-Conversão de tipos (int(), float(), str())
-Condicionais if, elif, else
-Condicionais aninhadas
-Operadores lógicos (and, or)
-Operadores de comparação (<, >, <=, >=, ==)
-Funções nativas: len(), round()
-Pensamento algorítmico e ordem lógica das verificações
+Simula a análise para abertura de conta bancária.
 
+**Regras implementadas:**
 
-🚀 Como executar
+- Menores de 18 anos precisam de responsável  
+- CPF deve ter no mínimo 11 dígitos  
+- Renda define tipo de conta (corrente ou poupança)  
+- Conta juvenil aprovada apenas com responsável  
 
-Certifique-se de ter o Python 3 instalado. No terminal, navegue até a pasta do projeto e execute:
-bashpython nome_do_arquivo.py
-Exemplo:
-bashpython sistema_saque.py
+**Conceitos praticados:**
+
+- `len()` para validação de strings  
+- Conversão de tipos com `int()` e `float()`  
+- Estruturas condicionais aninhadas  
+- Separação de fluxos por perfil de cliente  
+
+---
+
+## 📚 Conceitos aplicados
+
+- Variáveis e tipos de dados (`str`, `int`, `float`)  
+- Entrada de dados com `input()`  
+- Conversão de tipos  
+- Condicionais `if`, `elif`, `else`  
+- Condicionais aninhadas  
+- Operadores lógicos (`and`, `or`)  
+- Operadores de comparação (`<`, `>`, `<=`, `>=`, `==`)  
+- Funções nativas: `len()`, `round()`  
+- Organização de fluxo e raciocínio lógico  
+
+---
+
+## 🚀 Como executar
+
+Certifique-se de ter o **Python 3** instalado.
+
+No terminal, navegue até a pasta do projeto e execute:
+
+```bash
+python nome_do_arquivo.py
