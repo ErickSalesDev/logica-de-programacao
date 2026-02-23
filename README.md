@@ -10,11 +10,11 @@ Este repositório reúne projetos práticos criados para consolidar os fundament
 
 Cada projeto simula situações inspiradas no contexto bancário, aplicando:
 
-- Variáveis
-- Estruturas condicionais
-- Conversão de tipos
-- Validação de dados
-- Pensamento algorítmico
+- Variáveis  
+- Estruturas condicionais  
+- Conversão de tipos  
+- Validação de dados  
+- Pensamento algorítmico  
 
 Os projetos foram desenvolvidos de forma progressiva, aumentando a complexidade a cada etapa.
 
@@ -34,9 +34,9 @@ Simula o processo de saque em um caixa eletrônico.
 
 **Regras implementadas:**
 
-- Verifica se a conta está bloqueada
-- Verifica se o saldo é suficiente
-- Atualiza e exibe o novo saldo após saque aprovado
+- Verifica se a conta está bloqueada  
+- Verifica se o saldo é suficiente  
+- Atualiza e exibe o novo saldo após saque aprovado  
 
 **Conceitos praticados:**
 
@@ -105,6 +105,26 @@ Simula a análise para abertura de conta bancária.
 
 ---
 
+### 5️⃣ `sistema_pix.py` — Sistema de Pagamento via Pix
+
+Simula um pagamento via Pix com validações de segurança.
+
+**Regras implementadas:**
+
+- Verifica se a conta está bloqueada  
+- Valida tamanho da chave Pix  
+- Verifica saldo disponível  
+- Aplica limite noturno (22h às 6h) para valores acima de R$ 1.000,00  
+- Atualiza saldo após aprovação  
+
+**Conceitos praticados:**
+
+- Operadores lógicos compostos (`and`, `or`)  
+- Validação em múltiplas camadas  
+- Controle de fluxo com regras dependentes  
+
+---
+
 ## 📚 Conceitos aplicados
 
 - Variáveis e tipos de dados (`str`, `int`, `float`)  
@@ -125,5 +145,4 @@ Certifique-se de ter o **Python 3** instalado.
 
 No terminal, navegue até a pasta do projeto e execute:
 
-```bash
 python nome_do_arquivo.py
